@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/03.css">
+
+</head>
+<body>
+ <h1> Основні властивості css для роботи з текстом </h1>
+ 
+ <h2> Властивість font-size </h2>
+<p>Властивість <span class="col1">font-size</span> змінює розмір шрифта. </p>
+<p> Розмір шрифта задається за допомогою значення та одиниць виміру <span class="col1">(em,px,pt,%)</span></p>
+  <h3>Синтаксис:</h3>
+    <p><span class="col2"> CSS </span></p>
+    <div>
+        <pre>
+        p{
+            font-size: 20px;
+        }
+        </pre>
+    </div>
+    <p><span class="col2"> HTML </span></p>
+        <div>
+            &lt;p&gt;Hello, world!&lt;p&gt;
+        </div>
+    <h3>Результат:</h3>
+        <div>
+          <p>Hello, world!</p>
+        </div>
+  
+        
+<h2> Властивість font-weight </h2>
+    <p> Властивість  <span class="col1">font-weight</span> встановлює насиченість шрифту. </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1">normal</span> - нормальна насиченість, те саме, що і <span class="col1">400</span> </li>
+            <li><span class="col1">bold</span> - напівжирний текст, те саме що і <span class="col1">700</span> </li>
+            <li><span class="col1">lighter</span> - змінює насиченість відносно батьківського стилю в меншу сторону </li>
+            <li><span class="col1">bolder</span> - змінює насиченість відносно батьківського стилю в більшу сторону</li>
+            <li><span class="col1">100, 200, 300, 400, 500, 600, 700, 800, 900</span> - цифрові значення насиченості, які відрізняються від стандартних </li>
+        </ul>
+    <h3>Синтаксис:</h3>
+        <p><span class="col2"> CSS </span></p>
+
+            <div>
+                <pre>
+                    <code>
+                    .bold{
+                    font-weight: bold;
+                    }
+                    .thin{
+                    font-weight: 100;
+                    }
+                    .max{
+                    font-weight: 900;
+                    }
+                    </code>
+                </pre>
+            </div>
+
+        <p><span class="col2"> HTML </span></p>
+
+    <div>
+        <code>
+        &lt;p&gt;<br>
+        &lt;span class = "bold"&gt;напівжирний текст&lt;/span&gt; <br>
+        &lt;span class = "thin"&gt;найтонший текст&lt;/span&gt; <br>
+        &lt;span class = "max"&gt;найтовщий текст&lt;/span&gt; <br>
+        &lt;p&gt;<br>
+        </code>
+    </div>
+
+        <h3>Результат:</h3>
+        <div>
+            <pre>
+                <p>
+                    <span class = "bold" > напівжирний текст </span>,
+                    <span class = "thin"> найтонший текст </span>,
+                    <span class = "max"> найтовщий текст </span>.
+                </p>
+            </pre>
+        </div>
+
+
+<h2> Властивість font-style </h2>   
+    <p> Властивість <span class="col1">font-style</span> визначає накреслення шрифту - звичайне, курсивне або похило. </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1">normal</span> - Звичайне накреслення тексту </li>
+            <li><span class="col1">italic</span> - Курсивне накреслення </li>
+            <li><span class="col1">oblique</span> - Похиле накреслення </li>
+        </ul>
+    <h3>Синтаксис:</h3>
+        <p><span class="col2"> CSS </span></p>
+        
+            <div>
+                <pre>
+                    <code>
+                        .normal{
+                            font-style: normal;
+                        }
+                        
+                        .italic{
+                            font-style: italic;
+                        }
+                        
+                        .oblique{
+                            font-style: oblique;
+                        }
+                    </code>
+                </pre>
+            </div>
+
+        <p><span class="col2"> HTML </span></p>
+    <div>
+        <code>
+            &lt;p&gt;<br>
+            &lt;span class = "normal"&gt; Звичайне накреслення тексту &lt;/span&gt; <br>
+            &lt;span class = "italic"&gt; курсивне накреслення тексту &lt;/span&gt; <br>
+            &lt;span class = "oblique"&gt; Похиле накреслення тексту &lt;/span&gt; <br>
+            &lt;p&gt;<br>
+        </code>
+    </div>
+        <h3>Результат:</h3>
+        <div>
+            <pre>
+              <p>
+                <span class = "normal" > Звичайне </span> накреслення тексту
+                <span class = "italic" > Курсивне </span> накреслення тексту
+                <span class = "oblique" > Похиле </span> накреслення тексту
+              </p>
+            </pre>
+        </div>
+
+
+<h2> Властивість font-family </h2>   
+    <p> Властивість <span class="col1"> font-family </span>визначає, який шрифт використати. </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1"> serif </span> - шрифти із засічками (антиквенні), типу Times; </li>
+            <li><span class="col1"> sans-serif </span> - рубані шрифти (шрифти без засічок чи гротески), типовий представник - Arial; </li>
+            <li><span class="col1"> monospace </span> - моноширинні шрифти, ширина кожного символу у такому сімействі однакова (шрифт Courier). </li>
+        </ul>
+
+    <h3>Синтаксис:</h3>
+        <p><span class="col2"> CSS </span></p>
+        
+            <div>
+                <pre>
+                    <code>
+                        .serif{
+                            font-family: serif;
+                        }
+                        .sans-serif{
+                            font-family: sans-serif;
+                        }
+                        .monospace{
+                            font-family: monospace;
+                        }
+                    </code>
+                </pre>
+            </div>
+
+        <p><span class="col2"> HTML </span></p>
+
+    <div>
+        <code>
+            &lt;p&gt;<br>
+            &lt;span class = "serif"&gt; шрифти із засічками (антиквенні), типу Times; &lt;/span&gt; <br>
+            &lt;span class = "sans-serif"&gt; рубані шрифти (шрифти без засічок чи гротески), типовий представник - Arial; &lt;/span&gt; <br>
+            &lt;span class = "monospace"&gt; моноширинні шрифти, ширина кожного символу у такому сімействі однакова (шрифт Courier). &lt;/span&gt; <br>
+            &lt;p&gt;<br>
+        </code>
+    </div>
+
+        <h3>Результат:</h3>
+        <div>
+        <pre>
+            <p>
+                <span class = "serif" > шрифти із засічками (антиквенні), типу Times; </span>
+                <span class = "sans-serif" > убані шрифти (шрифти без засічок чи гротески), 
+                типовий представник - Arial; </span>
+                <span class = "monospace" > моноширинні шрифти, ширина кожного символу у такому сімействі однакова 
+                (шрифт Courier). </span>
+            </p>
+        </pre>
+        </div>
+
+
+<h2> Властивість color </h2>   
+    <p> Властивість <span class="col1">color</span> змінює колір тексту </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1"> color </span> - зміна коліру </li>
+        </ul>
+        
+        <h3>Синтаксис:</h3>
+            <p><span class="col2"> CSS </span></p>
+                
+                <div>
+                    <pre>
+                        <code>
+                            .color{
+                                color: #3a7a43;
+                            }
+                        </code>
+                    </pre>
+                </div>
+        
+            <p><span class="col2"> HTML </span></p>
+        
+        <div>
+            <code>
+                &lt;p&gt;<br>
+                Зазвичай ліс &lt;span class = "color"&gt; зеленого  &lt;/span&gt; коліру <br>
+                &lt;p&gt;<br>
+            </code>
+        </div>
+            
+         <h3>Результат:</h3>
+         <div>
+            <p>
+                Зазвичай ліс <span class = "color" > зеленого </span> коліру
+            </p>
+        </div>
+
+
+<h2> Властивість text-transform </h2>   
+    <p> Властивість <span class="col1">text-transform</span> Керує перетворенням тексту елемента в великі або великі символи </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1"> capitalize </span> - Перший символ кожного слова в реченні буде великим. Інші символи свого вигляду не змінюють. </li>
+            <li><span class="col1"> lowercase </span> - Усі символи тексту стають малими (нижній регістр). </li>
+            <li><span class="col1"> uppercase </span> - Усі символи тексту стають великими (верхній регістр). </li>
+            <li><span class="col1"> none </span> - Не змінює регістр символів. </li>
+        </ul>
+        
+        <h3>Синтаксис:</h3>
+            <p><span class="col2"> CSS </span></p>
+                
+                <div>
+                    <pre>
+                        <code>
+                            .capitalize{
+                                text-transform: capitalize;
+                            }
+                            .lowercase{
+                                text-transform: lowercase;
+                            }
+                            .uppercase{
+                                text-transform: uppercase;
+                            }
+                            .none{
+                                text-transform: none;
+                            }
+                        </code>
+                    </pre>
+                </div>
+        
+            <p><span class="col2"> HTML </span></p>
+        
+        <div>
+            <code>
+                &lt;p&gt;<br>
+                &lt;span class = "capitalize"&gt; перший символ кожного слова в реченні буде великим.  &lt;/span&gt; Інші символи свого вигляду не змінюють. <br>
+                &lt;span class = "lowercase"&gt; Усі символи тексту стають малими (нижній регістр). &lt;/span&gt; <br>
+                &lt;span class = "uppercase"&gt; Усі символи тексту стають великими (верхній регістр). &lt;/span&gt; <br>
+                &lt;span class = "none"&gt; Не змінює регістр символів. &lt;/span&gt; <br>
+                &lt;p&gt;<br>
+            </code>
+        </div>
+            
+         <h3>Результат:</h3>
+         <div>
+         <pre>
+            <p>
+                <span class = "capitalize" >перший символ кожного слова в реченні буде великим. </span> 
+                Інші символи свого вигляду не змінюють.
+                <span class = "lowercase" >Усі символи тексту стають малими (нижній регістр). </span>
+                <span class = "uppercase" >Усі символи тексту стають великими (верхній регістр). </span>
+                <span class = "none" >Не змінює регістр символів. </span>
+            </p>
+        </pre>
+        </div>
+
+
+<h2> Властивість text-decoration </h2>   
+    <p> Властивість <span class="col1">text-decoration</span> Додає оформлення тексту як його підкреслення, перекреслення чи лінії над текстом. </p> <br>
+    <p>Може приймати наступні значення:</p>
+        <ul>
+            <li><span class="col1"> blink </span> - Встановлює миготливий текст. Такий текст періодично приблизно раз на секунду зникає, потім знову з'являється на колишньому місці. </li>
+            <li><span class="col1"> line-through </span> - Створює перекреслений  текст </li>
+            <li><span class="col1"> overline </span> - Лінія проходить над текстом </li>
+            <li><span class="col1"> underline </span> - Встановлює підкреслений текст </li>
+            <li><span class="col1"> none </span> - Скасовує всі ефекти, у тому числі й підкреслення посилань, яке задано за замовчуванням. </li>
+        </ul>
+                
+        <h3>Синтаксис:</h3>
+            <p><span class="col2"> CSS </span></p>
+                        
+                <div>
+                    <pre>
+                        <code>
+                            .blink{
+                                text-decoration: blink;
+                            }
+                            .line-through{
+                                text-decoration: line-through;
+                            }
+                            .overline{
+                                text-decoration: overline;
+                            }
+                            .underline{
+                                text-decoration: underline;
+                            }
+                            .none2{
+                                text-decoration: none;
+                            }
+                        </code>
+                    </pre>
+                </div>
+                
+            <p><span class="col2"> HTML </span></p>
+                
+        <div>
+            <code>
+                &lt;p&gt;<br>
+                Встановлює &lt;span class = "blink"&gt;миготливий текст.  &lt;/span&gt; Такий текст періодично приблизно раз на секунду зникає, потім знову з'являється на колишньому місці. <br>
+                Створює перекреслений  &lt;span class = "line-through"&gt;текст &lt;/span&gt; <br>
+                Лінія проходить  &lt;span class = "overline"&gt;над текстом &lt;/span&gt; <br>
+                Встановлює &lt;span class = "underline"&gt;підкреслений текст &lt;/span&gt; <br>
+                &lt;span class = "none2"&gt; Скасовує всі ефекти, у тому числі й підкреслення посилань, яке задано за замовчуванням. &lt;/span&gt; <br>
+                &lt;p&gt;<br>
+            </code>
+        </div>
+                    
+        <h3>Результат:</h3>
+        <div>
+            <pre>
+                <p>
+                    Встановлює <span class = "blink" > миготливий текст. </span> 
+                    Створює перекреслений <span class = "line-through" > текст </span>
+                    Лінія проходить <span class = "overline" > над текстом </span>
+                    Встановлює <span class = "underline" > підкреслений текст </span>
+                    <span class = "none2" >Скасовує всі ефекти, у тому числі й підкреслення посилань, 
+                    яке задано за замовчуванням </span>
+                </p>
+            </pre>
+        </div>
+        
+</body>
+</html>

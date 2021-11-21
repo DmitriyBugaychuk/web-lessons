@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap%27%27);
+*{
+    font-family: Roboto, sans-serif;
+}
+
+h1{
+    color:black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h2{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3{
+    color:black;
+    font-weight: bold;
+}
+
+div{
+    width: 600px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+body>p{
+    color: #666;
+    font-size: 14px;
+}
+
+.col1{
+    color:#c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.col2{
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+   }
+
+.thin{
+    font-weight: 100;
+   }
+   
+.max{
+    font-weight: 900;
+   }
+
+.normal{
+    font-style: normal;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.serif{
+    font-family: serif;
+}
+.sans-serif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+
+.color{
+    color: #3a7a43;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.none{
+    text-transform: none;
+}
+
+.blink{
+    text-decoration: blink;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.overline{
+    text-decoration: overline;
+}
+.underline{
+    text-decoration: underline;
+}
+.none2{
+    text-decoration: none;
+}
